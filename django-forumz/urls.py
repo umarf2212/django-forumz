@@ -22,6 +22,7 @@ from accounts import views as accounts_views
 from boards import views
 
 urlpatterns = [
+    url(r'^$', views.hello),
     url(r'^admin/', admin.site.urls),
     url(r'^myapp/', include('myapp.urls')),
     url(r'^boards/', include('boards.urls')),

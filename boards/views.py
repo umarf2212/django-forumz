@@ -19,7 +19,7 @@ def home(request):
     return render(request, 'home.html', {'boards': boards})
 
 def hello(request):
-    return HttpResponse('Hello World!')
+    return render(request, 'hello.html')
 
 def board_topics(request, pk):
     board = get_object_or_404(Board, pk=pk)
